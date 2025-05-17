@@ -11,9 +11,11 @@ def mult(a,b):
     print("{} * {} = {}".format(a,b,m))
 
 def div(a,b):
-    d = a / b
-    print("{} / {} = {}".format(a,b,d))
-
+    if b!=0:
+        d = a / b
+        print("{} / {} = {}".format(a,b,d))
+    else:
+        print("valores inválidos")
 while True:
     def calculadora(a,b):
         operacoes = int(input("\n1- soma \n2- subtração \n3- multiplicação \n4- divisão \nEscolha sua operação desejada: "))
